@@ -1,0 +1,115 @@
+/* styles.css */
+
+/* Mengatur font, warna latar belakang, margin, dan padding */
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(135deg,#eae2e2,#ffffff);
+    /* Warna latar belakang */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Menggunakan display flex untuk memusatkan vertikal */
+    justify-content: center;
+    /* Memusatkan horizontal */
+    align-items: center;
+    /* Memusatkan vertikal */
+    height: 100vh;
+    /* Menetapkan tinggi ke 100% dari viewport tinggi */
+}
+
+/* Container untuk menempatkan elemen-elemen dalam bentuk box */
+.container {
+    background-color: #fff;
+    /* Warna latar belakang kontainer */
+    border-radius: 8px;
+    /* Membuat sudut kontainer sedikit melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Membuat bayangan tipis */
+    padding: 20px;
+    /* Ruang dalam kontainer */
+    width: 400px;
+    /* Lebar kontainer */
+    max-width: 100%;
+    /* Maksimum lebar 100% dari tampilan */
+}
+
+/* Judul form */
+h2 {
+    margin-top: 0;
+    /* Menghilangkan margin atas */
+    text-align: center;
+    /* Memusatkan teks */
+    color: #333;
+    /* Warna teks */
+}
+
+/* Label untuk input */
+label {
+    font-weight: bold;
+    /* Membuat teks label lebih tebal */
+    color: #555;
+    /* Warna teks label */
+}
+
+/* Input teks, tanggal, textarea, dan select */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+    width: calc(100% - 20px);
+    /* Lebar input dikurangi 20px (untuk padding) */
+    padding: 10px;
+    /* Ruang dalam input */
+    margin: 5px 0;
+    /* Margin atas dan bawah */
+    border: 1px solid #ccc;
+    /* Border dengan warna abu-abu */
+    border-radius: 4px;
+    /* Melengkungkan sudut input */
+    box-sizing: border-box;
+    /* Membuat padding dan border termasuk dalam lebar dan tinggi total */
+}
+
+/* Radio button */
+input[type="radio"] {
+    margin-right: 5px;
+    /* Memberikan sedikit ruang antara radio button */
+}
+
+/* Tombol Submit */
+input[type="submit"] {
+    background-color: #6b96f3;
+    /* Warna latar belakang hijau */
+    color: white;
+    /* Warna teks putih */
+    padding: 10px 20px;
+    /* Ruang dalam tombol */
+    border: none;
+    /* Tanpa border */
+    border-radius: 4px;
+    /* Melengkungkan sudut */
+    cursor: pointer;
+    /* Mengubah kursor saat diarahkan */
+    width: calc(100% - 20px);
+    /* Lebar tombol dikurangi 20px (untuk padding) */
+    margin-top: 10px;
+    /* Margin atas */
+    transition: background-color 0.3s;
+    /* Transisi untuk perubahan warna latar belakang */
+}
+
+/* Efek hover pada tombol submit */
+input[type="submit"]:hover {
+    background-color: #45a049;
+    /* Warna latar belakang lebih gelap saat dihover */
+}
+
+/* Pesan kesalahan */
+.error {
+    color: red;
+    /* Warna teks merah */
+    font-size: 0.9em;
+    /* Ukuran teks sedikit lebih kecil */
+    margin-top: 5px;
+    /* Margin atas */
+}
